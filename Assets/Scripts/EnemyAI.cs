@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 5f;
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
+    bool isProvoke = false;
     
     void Start()
     {
@@ -19,10 +20,37 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
-        if (distanceToTarget <= chaseRange)
+        if (isProvoke)
         {
-            navMeshAgent.SetDestination(target.position);
+            EngageTarget();
+        } else if (distanceToTarget <= chaseRange)
+        {
+            isProvoke = true;
+            //
         }
+    }
+
+    private void EngageTarget()
+    {
+        if (distanceToTarget >= navMeshAgent.stoppingDistance)
+        {
+            ChaseTarget();
+        } 
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+        {
+            AttackTarget();
+        }
+    }
+
+    private void ChaseTarget()
+    {
+        print("dbg: ChaseTarget");
+        navMeshAgent.SetDestination(target.position);
+    }
+
+    private void AttackTarget()
+    {
+        print("dbg: AttackTarget");
     }
 
     void OnDrawGizmosSelected()

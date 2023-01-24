@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
+    [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 25f;
     // Start is called before the first frame update
@@ -23,6 +24,17 @@ public class Weapon : MonoBehaviour
     }
 
     void Shoot()
+    {
+        PlayMuzzleFlash();
+        ProcessRaycast();
+    }
+
+    void PlayMuzzleFlash()
+    {
+        muzzleFlash.Play();
+    }
+
+    void ProcessRaycast()
     {
         RaycastHit hit;
         if(Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))

@@ -342,6 +342,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683965138286345337}
     m_Modifications:
+    - target: {fileID: 3465321690214994016, guid: 9b376b4a84648451ebb328a2ca96703b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465321690214994016, guid: 9b376b4a84648451ebb328a2ca96703b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465321690214994016, guid: 9b376b4a84648451ebb328a2ca96703b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.741
+      objectReference: {fileID: 0}
     - target: {fileID: 6919057540027915013, guid: 9b376b4a84648451ebb328a2ca96703b, type: 3}
       propertyPath: m_Name
       value: Gun
@@ -415,4 +427,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 1581717094541985728}
+  muzzleFlash: {fileID: 8637727199280268245}
   range: 100
+  damage: 25
+--- !u!198 &8637727199280268245 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3189363286577739567, guid: 9b376b4a84648451ebb328a2ca96703b, type: 3}
+  m_PrefabInstance: {fileID: 6601637264121918714}
+  m_PrefabAsset: {fileID: 0}

@@ -717,6 +717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7675320504010997960, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 6771536994361536035, guid: 99d5ce8b4c9f441159f96a4e4e06cd6a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
 --- !u!1001 &604968448
@@ -2100,6 +2104,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
   m_PrefabInstance: {fileID: 1787734970}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1875949346 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1581717094541433282, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
+  m_PrefabInstance: {fileID: 541175467}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1890568594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2724,7 +2733,7 @@ PrefabInstance:
     - target: {fileID: 2779021613320678376, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1875949346}
     - target: {fileID: 2779021613320678377, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
       propertyPath: m_StoppingDistance
       value: 1

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
     [SerializeField] ParticleSystem muzzleFlash;
+    [SerializeField] GameObject hitEffect;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 25f;
     // Start is called before the first frame update
@@ -42,7 +44,12 @@ public class Weapon : MonoBehaviour
             print($"I hit this thing {hit.transform.name}");
             // TODO: add some hit effect for visual player
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
-            if (target == null) { return; }
+            if (target == null) 
+            { 
+                print($"dbg: hit position {hit.transform.position}");
+                CreateHitImpact(hit);
+                return; 
+            }
             // call a method on EnemyHealth that decrease the enemy's health
             target.TakeDamage(damage);
         }
@@ -50,5 +57,10 @@ public class Weapon : MonoBehaviour
         {
             return;
         }
+    }
+
+    private void CreateHitImpact(RaycastHit hit)
+    {
+        Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
     }
 }

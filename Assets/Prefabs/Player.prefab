@@ -428,6 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 1581717094541985728}
   muzzleFlash: {fileID: 8637727199280268245}
+  hitEffect: {fileID: 6771536994361536035, guid: 99d5ce8b4c9f441159f96a4e4e06cd6a, type: 3}
   range: 100
   damage: 25
 --- !u!198 &8637727199280268245 stripped

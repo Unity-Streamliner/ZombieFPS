@@ -670,6 +670,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1581717094541133286, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 1581717094541133286, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
@@ -2686,6 +2690,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1635854872287189268, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2779021613320678373, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2734,6 +2742,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1875949346}
+    - target: {fileID: 2779021613320678376, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779021613320678377, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2779021613320678377, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
       propertyPath: m_StoppingDistance
       value: 1

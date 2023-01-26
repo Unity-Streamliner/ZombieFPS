@@ -10,10 +10,14 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoke = false;
+
+
+    Animator _animator;
     
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,6 +32,9 @@ public class EnemyAI : MonoBehaviour
             isProvoke = true;
             //
         }
+        bool isMoving = navMeshAgent.velocity.magnitude > 0.1f;
+        print($"dbg: moving: {navMeshAgent.velocity.magnitude}");
+        _animator.SetBool("isMoving", isMoving);
     }
 
     private void EngageTarget()
@@ -38,7 +45,10 @@ public class EnemyAI : MonoBehaviour
         } 
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            AttackTarget();
+            ShouldAttackTarget(true);
+        } else 
+        {
+            ShouldAttackTarget(false);
         }
     }
 
@@ -48,9 +58,10 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent.SetDestination(target.position);
     }
 
-    private void AttackTarget()
+    private void ShouldAttackTarget(bool attack)
     {
         print("dbg: AttackTarget");
+        _animator.SetBool("isAttacking", attack);
     }
 
     void OnDrawGizmosSelected()

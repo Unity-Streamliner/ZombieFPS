@@ -33,7 +33,6 @@ public class EnemyAI : MonoBehaviour
             //
         }
         bool isMoving = navMeshAgent.velocity.magnitude > 0.1f;
-        print($"dbg: moving: {navMeshAgent.velocity.magnitude}");
         _animator.SetBool("isMoving", isMoving);
     }
 

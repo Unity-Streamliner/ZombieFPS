@@ -2759,6 +2759,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4651247459181375171, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651247459181375171, guid: b1551b164c6ee487285e576e51b83ccd, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1875949346}

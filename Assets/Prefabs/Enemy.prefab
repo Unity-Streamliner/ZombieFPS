@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2779021613320678377}
   - component: {fileID: 2779021613320678376}
   - component: {fileID: 4216805465300987877}
+  - component: {fileID: 4651247459181375171}
   - component: {fileID: 1635854872287189268}
   m_Layer: 0
   m_Name: Enemy
@@ -152,6 +153,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+--- !u!114 &4651247459181375171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2779021613320678379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c462bca84e0d0415ea14c1c697abd7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  damage: 0
 --- !u!95 &1635854872287189268
 Animator:
   serializedVersion: 4

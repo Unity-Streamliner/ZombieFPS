@@ -37,6 +37,11 @@ public class EnemyAI : MonoBehaviour
         _animator.SetBool("isMoving", isMoving);
     }
 
+    public void OnDamageTaken()
+    {
+        isProvoke = true;
+    }
+
     private void EngageTarget()
     {
         FaceTarget();

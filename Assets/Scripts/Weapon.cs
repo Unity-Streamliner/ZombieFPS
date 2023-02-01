@@ -10,10 +10,12 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitEffect;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 25f;
+    [SerializeField] Ammo ammoSlot;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ammoSlot = GetComponentInParent<Ammo>();
+        print($"Dbg find ammo {ammoSlot.GetCurrentAmmo()}");
     }
 
     // Update is called once per frame
@@ -27,8 +29,10 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
+        if (ammoSlot.GetCurrentAmmo() <= 0) { return; }
         PlayMuzzleFlash();
         ProcessRaycast();
+        ammoSlot.ReduceAmmo();
     }
 
     void PlayMuzzleFlash()

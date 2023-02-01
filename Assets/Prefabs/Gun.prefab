@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6919057540028223447}
   - component: {fileID: 6919057540029084805}
   - component: {fileID: 6919057540030167121}
+  - component: {fileID: 3933029407865695522}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -84,6 +85,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3933029407865695522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919057540027915013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df24d3ffe7eb4572871f1453b010c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 6771536994361536035, guid: 99d5ce8b4c9f441159f96a4e4e06cd6a, type: 3}
+  range: 100
+  damage: 25
+  ammoSlot: {fileID: 0}
 --- !u!1001 &2191706807181731443
 PrefabInstance:
   m_ObjectHideFlags: 0

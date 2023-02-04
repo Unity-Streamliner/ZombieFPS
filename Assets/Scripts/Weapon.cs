@@ -11,7 +11,10 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 25f;
     [SerializeField] Ammo ammoSlot;
-    // Start is called before the first frame update
+    [SerializeField] Type ammoType;
+    bool canShoot = true;
+    float timeBetweenShots = 0.5f;
+
     void Start()
     {
         ammoSlot = GetComponentInParent<Ammo>();
@@ -21,18 +24,23 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && canShoot)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
     }
 
-    void Shoot()
+    IEnumerator Shoot()
     {
-        if (ammoSlot.GetCurrentAmmo() <= 0) { return; }
-        PlayMuzzleFlash();
-        ProcessRaycast();
-        ammoSlot.ReduceAmmo();
+        canShoot = false;
+        if (ammoSlot.GetCurrentAmmo() > 0) 
+        {
+            PlayMuzzleFlash();
+            ProcessRaycast();
+            ammoSlot.ReduceAmmo();
+        }
+        yield return new WaitForSeconds(timeBetweenShots);
+        canShoot = true;
     }
 
     void PlayMuzzleFlash()

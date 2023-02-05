@@ -15,10 +15,15 @@ public class Weapon : MonoBehaviour
     bool canShoot = true;
     float timeBetweenShots = 0.5f;
 
+    void OnEnable()
+    {
+        canShoot = true;
+    }
+
     void Start()
     {
         ammoSlot = GetComponentInParent<Ammo>();
-        print($"Dbg find ammo {ammoSlot.GetCurrentAmmo()}");
+        //print($"Dbg find ammo {ammoSlot.GetCurrentAmmo()}");
     }
 
     // Update is called once per frame
@@ -33,12 +38,12 @@ public class Weapon : MonoBehaviour
     IEnumerator Shoot()
     {
         canShoot = false;
-        if (ammoSlot.GetCurrentAmmo() > 0) 
+        /*if (ammoSlot.GetCurrentAmmo() > 0) 
         {
             PlayMuzzleFlash();
             ProcessRaycast();
             ammoSlot.ReduceAmmo();
-        }
+        }*/
         yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
     }

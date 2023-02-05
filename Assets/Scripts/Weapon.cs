@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 25f;
     [SerializeField] Ammo ammoSlot;
-    [SerializeField] Type ammoType;
+    [SerializeField] AmmoType ammoType;
     bool canShoot = true;
     float timeBetweenShots = 0.5f;
 

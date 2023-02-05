@@ -103,6 +103,7 @@ MonoBehaviour:
   range: 100
   damage: 25
   ammoSlot: {fileID: 0}
+  ammoType: 1
 --- !u!1001 &2191706807181731443
 PrefabInstance:
   m_ObjectHideFlags: 0

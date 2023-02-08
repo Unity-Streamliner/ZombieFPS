@@ -6481,6 +6481,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1464154232}
     m_Modifications:
+    - target: {fileID: 1457635310680646060, guid: baa1621c88f584b59982b56bcb09e62a, type: 3}
+      propertyPath: amount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4676192759665877744, guid: baa1621c88f584b59982b56bcb09e62a, type: 3}
       propertyPath: m_Name
       value: Ammo Pickup

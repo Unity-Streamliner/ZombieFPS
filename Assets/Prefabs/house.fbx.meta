@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: dc6213f79028b4246adb62552099e0e8
+guid: 3b2960bd4d12a402b9864d0371bfd505
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: breaks
+    second: {fileID: 2100000, guid: bb4ac7c1832f043559d7aff16680c15f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling
+    second: {fileID: 2100000, guid: 19dab23cdee5c4950a13ee3b68310b85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 1a1e352b8c9ed421290738b57f5fcd33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor.002
+    second: {fileID: 2100000, guid: 631e5f2c12aa6479280aa8c0a0834396, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: steps
+    second: {fileID: 2100000, guid: e50d4ab15dd844dfa81ef5b3d6be8205, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -37,7 +62,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1

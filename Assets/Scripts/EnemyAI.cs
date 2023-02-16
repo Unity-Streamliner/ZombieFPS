@@ -22,6 +22,7 @@ public class EnemyAI : MonoBehaviour
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         _health = GetComponent<EnemyHealth>();
+        target = FindObjectOfType<PlayerHealth>()?.gameObject.transform;
     }
 
     // Update is called once per frame
@@ -54,6 +55,7 @@ public class EnemyAI : MonoBehaviour
     private void EngageTarget()
     {
         FaceTarget();
+        print("dbg : " + (distanceToTarget >= _navMeshAgent.stoppingDistance) + "");
         if (distanceToTarget >= _navMeshAgent.stoppingDistance)
         {
             ChaseTarget();

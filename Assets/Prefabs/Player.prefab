@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 5692001760050450556}
   - component: {fileID: 5044879189136400364}
   - component: {fileID: 7158942474177753234}
+  - component: {fileID: 5098108364201133053}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -367,6 +368,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 0}
+--- !u!114 &5098108364201133053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581717094541133286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7207932ed8eea4388baf6e638e1cf123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageReceiveCanvas: {fileID: 0}
+  showingDamageTime: 0.3
 --- !u!1 &7323085407870153858
 GameObject:
   m_ObjectHideFlags: 0

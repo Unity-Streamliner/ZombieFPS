@@ -1033,6 +1033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6841811041844633117, guid: 1ea0ba2ff673e4c1a82e4110a5352b9a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ea0ba2ff673e4c1a82e4110a5352b9a, type: 3}
 --- !u!4 &849674730 stripped
@@ -1156,6 +1160,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5098108364201133053, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
+      propertyPath: damageReceiveCanvas
+      value: 
+      objectReference: {fileID: 963650617}
     - target: {fileID: 5692001760050450556, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
       propertyPath: ammoSlots.Array.data[0].amount
       value: 30
@@ -1235,6 +1243,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7a4a1f1390f94d7b9f5094344dff570, type: 3}
+--- !u!223 &963650617 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6841811041844633117, guid: 1ea0ba2ff673e4c1a82e4110a5352b9a, type: 3}
+  m_PrefabInstance: {fileID: 821049803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1100582610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7063852071250590042, guid: a7a4a1f1390f94d7b9f5094344dff570, type: 3}

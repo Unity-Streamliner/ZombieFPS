@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        GetComponent<DisplayDamage>()?.ShowDamageCanvas();
         healthPoint -= damage;
         if (healthPoint <= 0) {
             Died();

@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Died()
     {
+        print("DBG: DIED " + GetComponent<DeathHandler>());
         GetComponent<DeathHandler>()?.ShowMenu();
     }
     

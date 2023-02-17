@@ -50,7 +50,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 8557345396528518185}
   hitEffect: {fileID: 6771536994361536035, guid: 99d5ce8b4c9f441159f96a4e4e06cd6a, type: 3}
   range: 100
-  damage: 25
+  damage: 50
   ammoSlot: {fileID: 0}
   ammoType: 0
 --- !u!1 &5931094258318645115

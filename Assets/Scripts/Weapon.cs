@@ -13,7 +13,19 @@ public class Weapon : MonoBehaviour
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
     bool canShoot = true;
-    float timeBetweenShots = 0.5f;
+    float timeBetweenShots { 
+        get 
+        { 
+            if (ammoType == AmmoType.Pistol)
+            {
+                return 0.5f;
+            } 
+            else 
+            {
+                return 0f;
+            }
+        }
+    }
 
     void OnEnable()
     {

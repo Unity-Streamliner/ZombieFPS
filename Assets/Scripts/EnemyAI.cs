@@ -55,7 +55,6 @@ public class EnemyAI : MonoBehaviour
     private void EngageTarget()
     {
         FaceTarget();
-        print("dbg : " + (distanceToTarget >= _navMeshAgent.stoppingDistance) + "");
         if (distanceToTarget >= _navMeshAgent.stoppingDistance)
         {
             ChaseTarget();

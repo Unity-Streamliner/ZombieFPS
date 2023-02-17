@@ -257,6 +257,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7063852071250590042, guid: a7a4a1f1390f94d7b9f5094344dff570, type: 3}
   m_PrefabInstance: {fileID: 111656945}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &186623674 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6503006437080639361, guid: 1ea0ba2ff673e4c1a82e4110a5352b9a, type: 3}
+  m_PrefabInstance: {fileID: 821049803}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &206174411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1168,14 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 96849879}
+    - target: {fileID: 7856907188521408984, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
+      propertyPath: ammoTextUI
+      value: 
+      objectReference: {fileID: 186623674}
+    - target: {fileID: 8490278691422482992, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
+      propertyPath: ammoTextUI
+      value: 
+      objectReference: {fileID: 186623674}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf90b303cf07240c5ac7c15bb3d3dee8, type: 3}
 --- !u!1001 &894861550
